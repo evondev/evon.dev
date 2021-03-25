@@ -31,6 +31,28 @@ const styled = {
     debug: about-headingFeature;
     color: #9a86fd;
   `,
+  iconList: css`
+    debug: about-iconList;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+  `,
+  icon: css`
+    debug: about-icon;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    border-radius: 8px;
+    background-color: #4bc3ef;
+
+    img {
+      max-width: 50%;
+    }
+  `,
 };
 
 const About = () => {
@@ -63,7 +85,6 @@ const About = () => {
           Frontend Developer
         </Text>
       </Text>
-      <View></View>
     </View>
   );
 };
