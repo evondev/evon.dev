@@ -33,7 +33,7 @@ const styled = {
   courseTitle: css`
     debug: course-courseTitle;
     color: white;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 400;
     line-height: 1.6;
     color: white;
@@ -60,6 +60,7 @@ const styled = {
     padding: 15px;
     background-color: #9a86fd;
     font-size: 14px;
+    font-weight: 600;
   `,
   courseButtonFeatured: css`
     debug: course-courseButtonFeatured;

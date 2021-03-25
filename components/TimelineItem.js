@@ -78,7 +78,7 @@ const styled = {
     font-size: 20px;
     font-weight: bold;
     flex-shrink: 0;
-
+    position: relative;
     margin-right: 15px;
     @media screen and (max-width: 1023px) {
       font-size: 16px;
@@ -103,6 +103,19 @@ const styled = {
     }
     &.is-fourth {
       background-image: linear-gradient(to right bottom, #20e3b2, #00aefd);
+    }
+    &:after {
+      content: "";
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left: 0;
+      top: 0;
+      border-radius: inherit;
+      transform: translate(2px, 2px);
+      background-image: inherit;
+      z-index: -1;
+      filter: brightness(75%);
     }
   `,
 };
