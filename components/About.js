@@ -13,8 +13,15 @@ const styled = {
     justify-content: center;
     flex-direction: column;
     text-align: center;
-    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    @media (-webkit-min-device-pixel-ratio: 2) {
       background-color: #191a2e;
+    }
+    @media (min-resolution: 192dpi) {
+      background-color: #191a2e;
+    }
+    @media screen and (max-width: 1023px) {
+      height: auto;
+      padding: 50px 0;
     }
   `,
   heading: css`
