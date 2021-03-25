@@ -25,7 +25,7 @@ const SKIPPED_CLASSNAMES = [
 ];
 
 export default function getRenderer() {
-  const isDevMode = process.env.NODE_ENV === "production";
+  const isDevMode = process.env.NODE_ENV !== "production";
   const enhancers = isDevMode
     ? [
         sortClassNames(),
