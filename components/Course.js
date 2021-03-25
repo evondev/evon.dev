@@ -29,9 +29,13 @@ const styled = {
   headingLetter: css`
     debug: course-headingLetter;
     display: inline-flex;
+    align-items: center;
+    justify-content: center;
     padding: 10px;
-    border-radius: 10px;
-    background-image: linear-gradient(to right bottom, #33caf8, #3389f8);
+    width: 80px;
+    height: 80px;
+    border-radius: 100rem;
+    background-image: linear-gradient(to right bottom, #f62682, #3389f8);
     margin-right: 10px;
   `,
   courseList: css`
