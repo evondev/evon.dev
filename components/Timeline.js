@@ -1,26 +1,35 @@
 import React from "react";
 import { css, useStyles } from "./fela/felaCSS";
+import { global } from "./Global";
 import { Text } from "./text";
+import TimelineItem from "./TimelineItem";
 import { View } from "./view";
 const styled = {
   wrapper: css`
     debug: timeline-wrapper;
     background-color: #141523;
-    padding: 0.1px;
-    position: relative;
-    overflow: hidden;
+    padding: 50px 0;
     @media screen and (min-width: 1024px) {
       min-height: 100vh;
     }
+  `,
+  container: css`
+    debug: timeline-container;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
     &:after {
       content: "";
       position: absolute;
       left: 50%;
-      top: 125px;
+      top: 50px;
       width: 1px;
       transform: translateX(-50%);
       background-color: #000;
-      height: 100%;
+      height: calc(100% - 100px);
     }
     @media screen and (max-width: 479px) {
       &:after {
@@ -47,46 +56,44 @@ const TimeLine = () => {
 
   return (
     <View fcss={styled.wrapper}>
-      <div className="container">
-        {/* <View fcss={styled.circle}></View> */}
-        <div className="timeline-container">
-          <div className="timeline-item">
-            <div className="timeline-year is-second">
-              <span>20</span>
-              <span>15</span>
-            </div>
-            <div className="timeline-info">Graduated</div>
-          </div>
-          <div className="timeline-item">
-            <div className="timeline-year is-third">
-              <span>20</span>
-              <span>16</span>
-            </div>
-            <div className="timeline-info">InceptionLabs</div>
-          </div>
-          <div className="timeline-item">
-            <div className="timeline-year is-fourth">
-              <span>20</span>
-              <span>17</span>
-            </div>
-            <div className="timeline-info">UpFlow</div>
-          </div>
-          <div className="timeline-item">
-            <div className="timeline-year is-first">
-              <span>20</span>
-              <span>19</span>
-            </div>
-            <div className="timeline-info">KTcity</div>
-          </div>
-          <div className="timeline-item">
-            <div className="timeline-year is-first">
-              <span>20</span>
-              <span>21</span>
-            </div>
-            <div className="timeline-info">KTcity</div>
-          </div>
-        </div>
-      </div>
+      <View fcss={global.container} className="container">
+        <Text tagName="h2" fcss={global.heading}>
+          <Text
+            tagName="span"
+            fcss={[global.headingLetter, global.headingLetter2]}
+          >
+            C
+          </Text>
+          <Text tagName="span">areer of mine</Text>
+        </Text>
+        <View fcss={styled.container}>
+          <TimelineItem
+            year="15"
+            company="Sutrix Group"
+            color="is-third"
+          ></TimelineItem>
+          <TimelineItem
+            year="16"
+            company="InceptionLabs"
+            color="is-third"
+          ></TimelineItem>
+          <TimelineItem
+            year="17"
+            company="Upflow"
+            color="is-fourth"
+          ></TimelineItem>
+          <TimelineItem
+            year="19"
+            company="KTcity"
+            color="is-first"
+          ></TimelineItem>
+          <TimelineItem
+            year="21"
+            company="KTcity"
+            color="is-first"
+          ></TimelineItem>
+        </View>
+      </View>
     </View>
   );
 };

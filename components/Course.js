@@ -1,6 +1,7 @@
 import React from "react";
 import CourseItem from "./CourseItem";
 import { css, useStyles } from "./fela/felaCSS";
+import { global } from "./Global";
 import { Text } from "./text";
 import { View } from "./view";
 const styled = {
@@ -16,41 +17,6 @@ const styled = {
       flex-direction: column;
     }
   `,
-  heading: css`
-    debug: course-heading;
-    color: white;
-    font-size: 50px;
-    margin-bottom: 50px;
-    @media screen and (max-width: 1023px) {
-      font-size: 30px;
-      margin-bottom: 25px;
-    }
-  `,
-  headingLetter: css`
-    debug: course-headingLetter;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10px;
-    width: 80px;
-    height: 80px;
-    border-radius: 100rem;
-    background-image: linear-gradient(to right bottom, #f62682, #3389f8);
-    margin-right: 10px;
-    @media screen and (max-width: 1023px) {
-      width: 40px;
-      height: 40px;
-    }
-  `,
-  courseList: css`
-    debug: course-courseList;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 30px;
-    @media screen and (max-width: 1023px) {
-      grid-template-columns: 100%;
-    }
-  `,
 };
 
 const Course = () => {
@@ -58,18 +24,14 @@ const Course = () => {
 
   return (
     <View fcss={styled.wrapper}>
-      <View className="container">
-        <Text tagName="h2" fcss={styled.heading}>
-          <Text
-            tagName="span"
-            fcss={styled.headingLetter}
-            className="block-heading-letter"
-          >
-            C
+      <View fcss={global.container} className="container">
+        <Text tagName="h2" fcss={global.heading}>
+          <Text tagName="span" fcss={global.headingLetter}>
+            M
           </Text>
-          <Text tagName="span">ourse</Text>
+          <Text tagName="span">y best course</Text>
         </Text>
-        <View fcss={styled.courseList}>
+        <View fcss={global.courseList}>
           <CourseItem href="https://evondev.com/khoa-hoc-html-css"></CourseItem>
           <CourseItem
             href="#"
