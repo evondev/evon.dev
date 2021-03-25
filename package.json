@@ -8,6 +8,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "@babel/core": "^7.13.10",
     "fela": "^11.6.0",
     "fela-monolithic": "^11.6.0",
     "fela-plugin-embedded": "^11.6.0",
