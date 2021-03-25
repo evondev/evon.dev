@@ -20,7 +20,6 @@ const styled = {
     justify-content: center;
     flex-direction: column;
     position: relative;
-    overflow: hidden;
     &:after {
       content: "";
       position: absolute;
