@@ -37,6 +37,10 @@ const styled = {
     border-radius: 100rem;
     background-image: linear-gradient(to right bottom, #f62682, #3389f8);
     margin-right: 10px;
+    @media screen and (max-width: 1023px) {
+      width: 40px;
+      height: 40px;
+    }
   `,
   courseList: css`
     debug: course-courseList;
