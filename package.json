@@ -8,6 +8,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "@babel/plugin-transform-react-jsx": "^7.13.12",
     "fela": "^11.6.0",
     "fela-monolithic": "^11.6.0",
     "fela-plugin-embedded": "^11.6.0",
