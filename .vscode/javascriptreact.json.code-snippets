@@ -1,0 +1,22 @@
+{
+  "Export fela css styled": {
+    "prefix": "flcss",
+    "body": ["$2: css`", "debug: $1-$2;", "$3", "`,"],
+    "description": "Export fela css styled"
+  },
+  "import fela styled": {
+    "prefix": "flimport",
+    "body": ["const {styles} = useStyles$1();", ""],
+    "description": "import fela styled"
+  },
+  "using fela styles": {
+    "prefix": "fstyles",
+    "body": ["styles(styled.$1)"],
+    "description": "using fela styles"
+  },
+  "Using fela tag": {
+    "prefix": "fltag",
+    "body": ["<${1:div} className={`${styles($2)}$3`}>$4</${1:div}>"],
+    "description": "Using fela tag"
+  }
+}

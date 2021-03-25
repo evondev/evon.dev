@@ -1,0 +1,30 @@
+{
+  "name": "evon-dev",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev -p 1234",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "fela": "^11.6.0",
+    "fela-monolithic": "^11.6.0",
+    "fela-plugin-embedded": "^11.6.0",
+    "fela-plugin-fallback-value": "^11.6.0",
+    "fela-plugin-kebab-case": "^11.6.0",
+    "fela-plugin-multiple-selectors": "^11.6.0",
+    "fela-plugin-prefixer": "^11.6.0",
+    "fela-preset-web": "^11.6.0",
+    "fela-sort-classnames": "^11.6.0",
+    "fela-sort-media-query-mobile-first": "^11.6.0",
+    "isobject": "^4.0.0",
+    "next": "10.0.9",
+    "prop-types": "^15.7.2",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "react-fela": "^11.6.0",
+    "sass": "^1.32.8",
+    "typescript-styled-plugin": "^0.15.0"
+  }
+}

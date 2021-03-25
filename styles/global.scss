@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1;
+  color: #333;
+  background-color: white;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  overflow-x: hidden;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+a {
+  text-decoration: none;
+}
+
+.updown {
+  animation: updown 2s infinite linear forwards alternate;
+}
+.rotate {
+  animation: rotate 2s infinite linear forwards alternate;
+  will-change: transform;
+  backface-visibility: hidden;
+}
+@keyframes updown {
+  from {
+    transform: translateY(20px);
+  }
+  to {
+    transform: translateY(-20px);
+  }
+}
+@keyframes rotate {
+  from {
+    transform: rotate(20deg) translateZ(0);
+  }
+  to {
+    transform: rotate(-20deg) translateZ(0);
+  }
+}
+.svg-text {
+  margin: 20px 0;
+}
+.evon-text {
+  fill: none;
+  stroke-width: 3;
+  stroke-linejoin: round;
+  stroke-dasharray: 70 330;
+  stroke-dashoffset: 0;
+  -webkit-animation: stroke 6s infinite linear;
+  animation: stroke 6s infinite linear;
+  font-size: 100px;
+  font-weight: bold;
+  user-select: none;
+}
+
+.evon-text:nth-child(5n + 1) {
+  stroke: #ff6bcb;
+  -webkit-animation-delay: -1.2s;
+  animation-delay: -1.2s;
+}
+.evon-text:nth-child(5n + 2) {
+  stroke: #ffb86c;
+  -webkit-animation-delay: -2.4s;
+  animation-delay: -2.4s;
+}
+
+.evon-text:nth-child(5n + 3) {
+  stroke: #fff;
+  -webkit-animation-delay: -3.6s;
+  animation-delay: -3.6s;
+}
+
+.evon-text:nth-child(5n + 4) {
+  stroke: #2cccff;
+  -webkit-animation-delay: -4.8s;
+  animation-delay: -4.8s;
+}
+
+.evon-text:nth-child(5n + 5) {
+  stroke: #20e3b2;
+  -webkit-animation-delay: -6s;
+  animation-delay: -6s;
+}
+
+@-webkit-keyframes stroke {
+  100% {
+    stroke-dashoffset: -400;
+  }
+}
+
+@keyframes stroke {
+  100% {
+    stroke-dashoffset: -400;
+  }
+}
