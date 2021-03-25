@@ -59,8 +59,12 @@ const styled = {
     border-radius: 4px;
     padding: 15px;
     background-color: #9a86fd;
-    box-shadow: rgb(116 98 203) -2px 2px 0px 0px;
     font-size: 14px;
+  `,
+  courseButtonFeatured: css`
+    debug: course-courseButtonFeatured;
+    background-color: transparent;
+    background-image: linear-gradient(to right bottom, #33caf8, #3389f8);
   `,
 };
 
@@ -69,6 +73,8 @@ const CourseItem = ({
   src = "/images/html-css-course.jpeg",
   alt = "",
   title = " HTML CSS from scratch for absolutely beginners",
+  cta = "Get this course",
+  isFeatured = false,
 }) => {
   const { styles } = useStyles();
 
@@ -80,20 +86,20 @@ const CourseItem = ({
       className={styles(styled.courseItem)}
     >
       <View fcss={styled.courseImage} className="course-image">
-        <img src={src} alt={alt} />
+        <img src={src} alt={alt} loading="lazy" />
       </View>
       <View fcss={styled.courseContent} className="course-content">
         <Text tagName="h2" fcss={styled.courseTitle} className="course-title">
           {title}
         </Text>
-        {/* <View fcss={styled.courseRating}>
-          <img src="/images/icon-star.svg" alt="rating" />
-          <img src="/images/icon-star.svg" alt="rating" />
-          <img src="/images/icon-star.svg" alt="rating" />
-          <img src="/images/icon-star.svg" alt="rating" />
-          <img src="/images/icon-star.svg" alt="rating" />
-        </View> */}
-        <View fcss={styled.courseButton}>Get this course</View>
+        <View
+          fcss={[
+            styled.courseButton,
+            isFeatured ? styled.courseButtonFeatured : null,
+          ]}
+        >
+          {cta}
+        </View>
       </View>
     </a>
   );

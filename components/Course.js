@@ -31,7 +31,7 @@ const styled = {
     display: inline-flex;
     padding: 10px;
     border-radius: 10px;
-    background-image: linear-gradient(to right bottom, #9a86fd, #cc3cef);
+    background-image: linear-gradient(to right bottom, #33caf8, #3389f8);
     margin-right: 10px;
   `,
   courseList: css`
@@ -63,6 +63,13 @@ const Course = () => {
         </Text>
         <View fcss={styled.courseList}>
           <CourseItem href="https://evondev.com/khoa-hoc-html-css"></CourseItem>
+          <CourseItem
+            href="#"
+            src="/images/html-css-master.jpg"
+            cta="Coming soon"
+            isFeatured="true"
+            title="Training offline from beginner to master HTML CSS"
+          ></CourseItem>
           <CourseItem
             href="https://evondev.com/khoa-hoc-huong-dan-cat-psd"
             src="/images/html-css-psd-course.png"
