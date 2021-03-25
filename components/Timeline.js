@@ -30,11 +30,6 @@ const styled = {
       background-color: #000;
       height: calc(100% - 100px);
     }
-    @media screen and (max-width: 479px) {
-      &:after {
-        top: 100px;
-      }
-    }
   `,
   circle: css`
     debug: timeline-circle;
