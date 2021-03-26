@@ -113,6 +113,7 @@ a {
   position: absolute;
   right: 50px;
   top: 50px;
+  z-index: 99999;
   img {
     max-width: 100px;
     pointer-events: none;
