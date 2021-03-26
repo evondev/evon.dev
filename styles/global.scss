@@ -1,3 +1,4 @@
+@import "variables";
 * {
   margin: 0;
   padding: 0;
@@ -106,5 +107,37 @@ a {
 @keyframes rocket {
   to {
     transform: translateX(50px) translateY(0px);
+  }
+}
+.rocket-wrapper {
+  position: absolute;
+  right: 50px;
+  top: 50px;
+  img {
+    max-width: 100px;
+    pointer-events: none;
+    user-select: none;
+  }
+}
+.rocket-hello {
+  animation: rocketHello 10s infinite forwards linear;
+  &.reverse {
+    animation-name: rocketHelloReverse;
+  }
+}
+@keyframes rocketHello {
+  from {
+    transform: translateX(-100vw) translateY(-10vh);
+  }
+  to {
+    transform: translateX(100vw) translateY(100vh);
+  }
+}
+@keyframes rocketHelloReverse {
+  from {
+    transform: translateX(0) translateY(10vh);
+  }
+  to {
+    transform: translateX(-100vw) translateY(100vh);
   }
 }

@@ -6,6 +6,9 @@ import Head from "next/head";
 import React, { Fragment } from "react";
 import AboutMe from "@components/About";
 import Skills from "@components/Skills";
+import Team from "@components/Team";
+import Hobbies from "@components/Hobbies";
+import ThankYou from "@components/ThankYou";
 
 export default function Home() {
   return (
@@ -16,6 +19,8 @@ export default function Home() {
       <TimeLine></TimeLine>
       <Project></Project>
       <Skills></Skills>
+      <Hobbies></Hobbies>
+      <ThankYou></ThankYou>
     </Fragment>
   );
 }

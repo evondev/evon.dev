@@ -1,6 +1,7 @@
 import React from "react";
 import { css, useStyles } from "./fela/felaCSS";
 import LogoAnimation from "./LogoAnimation";
+import Rocket from "./Rocket";
 import { Text } from "./text";
 import { View } from "./view";
 const styled = {
@@ -14,12 +15,7 @@ const styled = {
     justify-content: center;
     flex-direction: column;
     text-align: center;
-    @media (-webkit-min-device-pixel-ratio: 2) {
-      background-color: #191a2e;
-    }
-    @media (min-resolution: 192dpi) {
-      background-color: #191a2e;
-    }
+    position: relative;
     @media screen and (max-width: 1023px) {
       height: auto;
       padding: 50px 0;
@@ -68,6 +64,7 @@ const Intro = () => {
 
   return (
     <View fcss={styled.wrapper}>
+      <Rocket></Rocket>
       <LogoAnimation></LogoAnimation>
       <Text tagName="h2" fcss={styled.heading}>
         <Text tagName="span" fcss={styled.headingFeature}>

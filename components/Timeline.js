@@ -1,6 +1,7 @@
 import React from "react";
 import { css, useStyles } from "./fela/felaCSS";
 import { global } from "./Global";
+import Rocket from "./Rocket";
 import { Text } from "./text";
 import TimelineItem from "./TimelineItem";
 import { View } from "./view";
@@ -9,6 +10,7 @@ const styled = {
     debug: timeline-wrapper;
     background-color: #141523;
     padding: 50px 0;
+    position: relative;
     @media screen and (min-width: 1024px) {
       min-height: 100vh;
     }
@@ -50,6 +52,7 @@ const TimeLine = () => {
 
   return (
     <View fcss={styled.wrapper}>
+      <Rocket className="reverse"></Rocket>
       <View fcss={global.container} className="container">
         <Text tagName="h2" fcss={global.heading}>
           <Text

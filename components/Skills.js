@@ -20,6 +20,7 @@ const styled = {
     display: flex;
     align-items: center;
     justify-content: center;
+    text-shadow: 5px 5px 0 black;
     @media screen and (max-width: 1023px) {
       font-size: 100px;
     }
@@ -37,7 +38,7 @@ const styled = {
     justify-content: center;
     flex-shrink: 0;
     position: relative;
-
+    box-shadow: 5px 5px 0 0 #000;
     @media screen and (max-width: 1023px) {
       width: 150px;
       height: 150px;
@@ -57,6 +58,26 @@ const styled = {
     top: 0;
     transform: translate(50%, 50%);
   `,
+  text: css`
+    debug: skills-text;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    font-size: 40px;
+    @media screen and (max-width: 1023px) {
+      font-size: 25px;
+    }
+    span {
+      color: transparent;
+      background-clip: text;
+      -webkit-background-clip: text;
+      background-image: linear-gradient(
+        to right,
+        rgb(231, 76, 60),
+        rgb(255, 107, 203)
+      );
+    }
+  `,
 };
 
 const Skills = () => {
@@ -71,9 +92,9 @@ const Skills = () => {
           </Text>
           <Text tagName="span">owerful skills</Text>
         </Text>
-        <div className={styles(styled.heading)}>
-          <span>4</span>
-          <div className={styles(styled.zero)}>
+        <View className={styles(styled.heading)}>
+          <Text tagName="span">4</Text>
+          <View className={styles(styled.zero)}>
             <img
               src="/images/img-astronaut.png"
               alt="astronaut"
@@ -84,9 +105,12 @@ const Skills = () => {
               alt="rocket"
               className={`${styles(styled.rocket)} -rk`}
             />
-          </div>
-          <span>4</span>
-        </div>
+          </View>
+          <Text tagName="span">4</Text>
+        </View>
+        <Text tagName="h3" fcss={styled.text}>
+          Skills <span>not</span> found 😱
+        </Text>
       </View>
     </View>
   );
