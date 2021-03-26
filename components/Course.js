@@ -29,7 +29,7 @@ const Course = () => {
           <Text tagName="span" fcss={global.headingLetter}>
             M
           </Text>
-          <Text tagName="span">y best course</Text>
+          <Text tagName="span">y best courses</Text>
         </Text>
         <View fcss={global.courseList}>
           <CourseItem href="https://evondev.com/khoa-hoc-html-css"></CourseItem>

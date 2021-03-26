@@ -6,6 +6,7 @@ export const global = {
     color: white;
     font-size: 40px;
     margin-bottom: 50px;
+    font-weight: 300;
     @media screen and (max-width: 1023px) {
       font-size: 30px;
       margin-bottom: 25px;
@@ -25,7 +26,8 @@ export const global = {
       rgb(51, 202, 248),
       rgb(51, 137, 248)
     );
-    margin-right: 10px;
+    margin-right: 5px;
+    font-weight: bold;
     @media screen and (max-width: 1023px) {
       width: 40px;
       height: 40px;
@@ -33,7 +35,11 @@ export const global = {
   `,
   headingLetter2: css`
     debug: global-headingLetter2;
-    background-image: linear-gradient(to right bottom, #20e3b2, #00aefd);
+    background-image: linear-gradient(to right bottom, #6723c5, #d23ff0);
+  `,
+  headingLetter3: css`
+    debug: global-headingLetter3;
+    background-image: linear-gradient(to right bottom, #ff6bcb, #ffa400);
   `,
   courseList: css`
     debug: global-courseList;

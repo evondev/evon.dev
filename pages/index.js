@@ -11,7 +11,7 @@ export default function Home() {
       <About></About>
       <Course></Course>
       <TimeLine></TimeLine>
-      {/* <Project></Project> */}
+      <Project></Project>
     </Fragment>
   );
 }
