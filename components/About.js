@@ -1,5 +1,6 @@
 import React from "react";
 import { css, useStyles } from "./fela/felaCSS";
+import LogoAnimation from "./LogoAnimation";
 import { Text } from "./text";
 import { View } from "./view";
 const styled = {
@@ -67,6 +68,7 @@ const About = () => {
 
   return (
     <View fcss={styled.wrapper}>
+      <LogoAnimation></LogoAnimation>
       <Text tagName="h2" fcss={styled.heading}>
         <Text tagName="span" fcss={styled.headingFeature}>
           Hello
