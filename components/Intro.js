@@ -7,7 +7,7 @@ const styled = {
   wrapper: css`
     debug: intro-wrapper;
     height: 100vh;
-    background-color: #141523;
+    background-color: #000011;
     padding: 25px;
     display: flex;
     align-items: center;

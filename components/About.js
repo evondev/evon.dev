@@ -42,6 +42,7 @@ const styled = {
         rgb(32, 227, 178),
         rgb(0, 174, 253)
       );
+      word-break: break-word;
     }
     p {
       margin-bottom: 15px;

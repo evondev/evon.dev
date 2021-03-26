@@ -92,48 +92,10 @@ a {
   }
 }
 
-.skill-heading {
-  text-align: center;
-  margin: 50px auto;
-  font-size: 150px;
-  font-weight: bold;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  @media screen and (max-width: 1023px) {
-    font-size: 100px;
-  }
-}
-.skill-zero {
-  width: 200px;
-  height: 200px;
-  display: inline-flex;
-  border-radius: 100rem;
-  padding: 10px;
-  background-image: linear-gradient(to right, #e74c3c, #ff6bcb);
-  margin: 0 25px;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-  position: relative;
-
-  @media screen and (max-width: 1023px) {
-    width: 150px;
-    height: 150px;
-  }
-}
-.skill-astronaut {
-  max-width: 60%;
-  transform: rotate(-20deg);
+.-as {
   animation: float 2s infinite alternate forwards linear;
 }
-.skill-rocket {
-  position: absolute;
-  z-index: 10;
-  max-width: 50px;
-  right: 0;
-  top: 0;
-  transform: translate(50%, 50%);
+.-rk {
   animation: rocket 2s infinite alternate forwards linear;
 }
 @keyframes float {

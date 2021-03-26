@@ -10,6 +10,53 @@ const styled = {
     background-color: #0e0c28;
     position: relative;
   `,
+  heading: css`
+    debug: skills-heading;
+    color: white;
+    text-align: center;
+    margin: 50px auto;
+    font-size: 150px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @media screen and (max-width: 1023px) {
+      font-size: 100px;
+    }
+  `,
+  zero: css`
+    debug: skills-zero;
+    width: 200px;
+    height: 200px;
+    display: inline-flex;
+    border-radius: 100rem;
+    padding: 10px;
+    background-image: linear-gradient(to right, #e74c3c, #ff6bcb);
+    margin: 0 25px;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    position: relative;
+
+    @media screen and (max-width: 1023px) {
+      width: 150px;
+      height: 150px;
+    }
+  `,
+  astronaut: css`
+    debug: skills-astronaut;
+    max-width: 60%;
+    transform: rotate(-20deg);
+  `,
+  rocket: css`
+    debug: skills-rocket;
+    position: absolute;
+    z-index: 10;
+    max-width: 50px;
+    right: 0;
+    top: 0;
+    transform: translate(50%, 50%);
+  `,
 };
 
 const Skills = () => {
@@ -23,23 +70,23 @@ const Skills = () => {
             P
           </Text>
           <Text tagName="span">owerful skills</Text>
-          <div className="skill-heading">
-            <span>4</span>
-            <div className="skill-zero">
-              <img
-                src="/images/img-astronaut.png"
-                alt="astronaut"
-                className="skill-astronaut"
-              />
-              <img
-                src="/images/img-rocket.png"
-                alt="rocket"
-                className="skill-rocket"
-              />
-            </div>
-            <span>4</span>
-          </div>
         </Text>
+        <div className={styles(styled.heading)}>
+          <span>4</span>
+          <div className={styles(styled.zero)}>
+            <img
+              src="/images/img-astronaut.png"
+              alt="astronaut"
+              className={`${styles(styled.astronaut)} -as`}
+            />
+            <img
+              src="/images/img-rocket.png"
+              alt="rocket"
+              className={`${styles(styled.rocket)} -rk`}
+            />
+          </div>
+          <span>4</span>
+        </div>
       </View>
     </View>
   );
