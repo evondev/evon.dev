@@ -92,13 +92,13 @@ a {
     stroke-dashoffset: 2000;
     fill: transparent;
     stroke-width: 10;
-    animation: dash 2s linear forwards infinite alternate;
+    animation: dash 5s linear forwards 1;
     stroke-linecap: round;
     stroke-linejoin: round;
   }
   .cls-2 {
     stroke: #1dc6e6;
-    animation-delay: 1s;
+    animation-delay: 2s;
   }
   .cls-3 {
     stroke: #1fe5b7;

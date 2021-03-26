@@ -2,7 +2,6 @@ import React from "react";
 import { css, useStyles } from "./fela/felaCSS";
 import { Text } from "./text";
 import { View } from "./view";
-import Image from "next/image";
 
 const styled = {
   courseItem: css`
@@ -89,13 +88,7 @@ const CourseItem = ({
       className={styles(styled.courseItem)}
     >
       <View fcss={styled.courseImage} className="course-image">
-        <Image
-          layout="fill"
-          objectFit="cover"
-          src={src}
-          alt={alt}
-          loading="lazy"
-        />
+        <img src={src} alt={alt} loading="lazy" />
       </View>
       <View fcss={styled.courseContent} className="course-content">
         <Text tagName="h2" fcss={styled.courseTitle} className="course-title">

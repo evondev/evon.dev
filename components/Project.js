@@ -37,14 +37,14 @@ const Project = () => {
           >
             A
           </Text>
-          <Text tagName="span">wesome projects</Text>
+          <Text tagName="span">wesome websites</Text>
         </Text>
         <View fcss={styled.projectList}>
           <ProjectItem
             href="https://codingui.dev"
             logo="/images/logo-codingui.png"
             alt="codingui.dev"
-            name="Codingui.dev"
+            name="Codingui"
             desc="Just simple place to get a lot of free UI code with just one click"
             color="secondary"
           ></ProjectItem>
@@ -52,7 +52,7 @@ const Project = () => {
             href="https://evondev.com"
             logo="/images/evondev-favicon.png"
             alt="evondev.com"
-            name="Evondev.com"
+            name="Evondev"
             desc="Personal blog where I share knowledge about HTML and CSS"
             color="primary"
           ></ProjectItem>
@@ -60,9 +60,33 @@ const Project = () => {
             href="https://kt.city"
             logo="/images/logo-ktcity.png"
             alt="kt.city"
-            name="KT.city"
+            name="KTcity"
             desc="Best platform learning system about Digital Marketing"
             color="third"
+          ></ProjectItem>
+          <ProjectItem
+            href="https://lambo.vn"
+            logo="/images/logo-lambo.png"
+            alt="lambo.vn"
+            name="Lambo"
+            desc="First MMO platform at VietNam"
+            color="four"
+          ></ProjectItem>
+          <ProjectItem
+            href="https://kiemtiencenter.com"
+            logo="/images/logo-kiemtiencenter.png"
+            alt="kiemtiencenter.com"
+            name="Kiemtiencenter"
+            desc="Best blog sharing knowledge about MMO I've ever seen"
+            color="primary"
+          ></ProjectItem>
+          <ProjectItem
+            href="https://www.youtube.com/channel/UCnk-sj9IS7GswHYQeVh8EuA"
+            logo="/images/logo-rachel.png"
+            alt="rachelizmarvel"
+            name="Rachelizmarvel"
+            desc="My best designer I love to working with"
+            color="fifth"
           ></ProjectItem>
         </View>
       </View>

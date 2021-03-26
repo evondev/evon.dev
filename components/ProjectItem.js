@@ -71,6 +71,14 @@ const styled = {
     debug: project-imageThird;
     background-image: linear-gradient(to right bottom, #33cdf9, #2979ff);
   `,
+  imageFour: css`
+    debug: project-imageFour;
+    background-image: linear-gradient(to right bottom, #fa9768, #ffa900);
+  `,
+  imageFifth: css`
+    debug: project-imageFifth;
+    background-image: linear-gradient(to right bottom, #dc52ba, #6d3c97);
+  `,
   info: css`
     debug: project-info;
     padding: 0 20px;
@@ -105,8 +113,10 @@ const ProjectItem = ({ href, logo, alt, name, desc, color }) => {
       <View
         fcss={[
           styled.image,
-          color === "third" && styled.imageThird,
           color === "secondary" && styled.imageSecond,
+          color === "third" && styled.imageThird,
+          color === "four" && styled.imageFour,
+          color === "fifth" && styled.imageFifth,
         ]}
       >
         <img src={logo} alt={alt} className="project-logo" />
