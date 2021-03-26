@@ -6,10 +6,10 @@ export const global = {
     color: white;
     font-size: 40px;
     margin-bottom: 50px;
-    font-weight: 300;
+    font-weight: 500;
     @media screen and (max-width: 1023px) {
       font-size: 30px;
-      margin-bottom: 25px;
+      margin-bottom: 35px;
     }
   `,
   headingLetter: css`

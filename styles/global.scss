@@ -103,9 +103,16 @@ a {
   .cls-3 {
     stroke: #1fe5b7;
   }
+  @media screen and (max-width: 1023px) {
+    max-width: 50px;
+  }
 }
 @keyframes dash {
   to {
     stroke-dashoffset: 0;
   }
+}
+.about-layout {
+}
+.about-image {
 }

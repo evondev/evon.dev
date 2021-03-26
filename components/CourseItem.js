@@ -30,6 +30,9 @@ const styled = {
     debug: course-courseContent;
     padding: 25px;
     flex: 1;
+    @media screen and (max-width: 1023px) {
+      padding: 20px;
+    }
   `,
   courseTitle: css`
     debug: course-courseTitle;

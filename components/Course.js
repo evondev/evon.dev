@@ -10,7 +10,6 @@ const styled = {
     background-color: #242b42;
     padding: 50px 0;
     @media screen and (min-width: 1024px) {
-      min-height: 100vh;
       display: flex;
       align-items: center;
       justify-content: center;
