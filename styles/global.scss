@@ -31,88 +31,138 @@ a {
 .svg-text {
   margin: 20px 0;
 }
-.evon-text {
-  fill: none;
-  stroke-width: 3;
-  stroke-linejoin: round;
-  stroke-dasharray: 70 330;
-  stroke-dashoffset: 0;
-  -webkit-animation: stroke 6s infinite linear;
-  animation: stroke 6s infinite linear;
-  font-size: 100px;
+// .evon-text {
+//   fill: none;
+//   stroke-width: 3;
+//   stroke-linejoin: round;
+//   stroke-dasharray: 70 330;
+//   stroke-dashoffset: 0;
+//   -webkit-animation: stroke 6s infinite linear;
+//   animation: stroke 6s infinite linear;
+//   font-size: 100px;
+//   font-weight: bold;
+//   user-select: none;
+// }
+
+// .evon-text:nth-child(5n + 1) {
+//   stroke: #ff6bcb;
+//   -webkit-animation-delay: -1.2s;
+//   animation-delay: -1.2s;
+// }
+// .evon-text:nth-child(5n + 2) {
+//   stroke: #ffb86c;
+//   -webkit-animation-delay: -2.4s;
+//   animation-delay: -2.4s;
+// }
+
+// .evon-text:nth-child(5n + 3) {
+//   stroke: #fff;
+//   -webkit-animation-delay: -3.6s;
+//   animation-delay: -3.6s;
+// }
+
+// .evon-text:nth-child(5n + 4) {
+//   stroke: #2cccff;
+//   -webkit-animation-delay: -4.8s;
+//   animation-delay: -4.8s;
+// }
+
+// .evon-text:nth-child(5n + 5) {
+//   stroke: #20e3b2;
+//   -webkit-animation-delay: -6s;
+//   animation-delay: -6s;
+// }
+
+// @-webkit-keyframes stroke {
+//   100% {
+//     stroke-dashoffset: -400;
+//   }
+// }
+
+// @keyframes stroke {
+//   100% {
+//     stroke-dashoffset: -400;
+//   }
+// }
+// .logo-animation {
+//   max-width: 100px;
+//   margin-bottom: 20px;
+//   path {
+//     stroke-dasharray: 2000;
+//     stroke-dashoffset: 2000;
+//     fill: transparent;
+//     stroke-width: 10;
+//     animation: dash 5s linear forwards 1;
+//     stroke-linecap: round;
+//     stroke-linejoin: round;
+//   }
+//   .cls-2 {
+//     stroke: #1dc6e6;
+//     animation-delay: 2s;
+//   }
+//   .cls-3 {
+//     stroke: #1fe5b7;
+//   }
+//   @media screen and (max-width: 1023px) {
+//     max-width: 50px;
+//   }
+// }
+// @keyframes dash {
+//   to {
+//     stroke-dashoffset: 0;
+//   }
+// }
+.skill-heading {
+  text-align: center;
+  margin: 50px auto;
+  font-size: 150px;
   font-weight: bold;
-  user-select: none;
-}
-
-.evon-text:nth-child(5n + 1) {
-  stroke: #ff6bcb;
-  -webkit-animation-delay: -1.2s;
-  animation-delay: -1.2s;
-}
-.evon-text:nth-child(5n + 2) {
-  stroke: #ffb86c;
-  -webkit-animation-delay: -2.4s;
-  animation-delay: -2.4s;
-}
-
-.evon-text:nth-child(5n + 3) {
-  stroke: #fff;
-  -webkit-animation-delay: -3.6s;
-  animation-delay: -3.6s;
-}
-
-.evon-text:nth-child(5n + 4) {
-  stroke: #2cccff;
-  -webkit-animation-delay: -4.8s;
-  animation-delay: -4.8s;
-}
-
-.evon-text:nth-child(5n + 5) {
-  stroke: #20e3b2;
-  -webkit-animation-delay: -6s;
-  animation-delay: -6s;
-}
-
-@-webkit-keyframes stroke {
-  100% {
-    stroke-dashoffset: -400;
-  }
-}
-
-@keyframes stroke {
-  100% {
-    stroke-dashoffset: -400;
-  }
-}
-.logo-animation {
-  max-width: 100px;
-  margin-bottom: 20px;
-  path {
-    stroke-dasharray: 2000;
-    stroke-dashoffset: 2000;
-    fill: transparent;
-    stroke-width: 10;
-    animation: dash 5s linear forwards 1;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-  }
-  .cls-2 {
-    stroke: #1dc6e6;
-    animation-delay: 2s;
-  }
-  .cls-3 {
-    stroke: #1fe5b7;
-  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
   @media screen and (max-width: 1023px) {
-    max-width: 50px;
+    font-size: 100px;
   }
 }
-@keyframes dash {
+.skill-zero {
+  width: 200px;
+  height: 200px;
+  display: inline-flex;
+  border-radius: 100rem;
+  padding: 10px;
+  background-image: linear-gradient(to right, #e74c3c, #ff6bcb);
+  margin: 0 25px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+
+  @media screen and (max-width: 1023px) {
+    width: 150px;
+    height: 150px;
+  }
+}
+.skill-astronaut {
+  max-width: 60%;
+  transform: rotate(-20deg);
+  animation: float 2s infinite alternate forwards linear;
+}
+.skill-rocket {
+  position: absolute;
+  z-index: 10;
+  max-width: 50px;
+  right: 0;
+  top: 0;
+  transform: translate(50%, 50%);
+  animation: rocket 2s infinite alternate forwards linear;
+}
+@keyframes float {
   to {
-    stroke-dashoffset: 0;
+    transform: rotate(-20deg) translateY(-10px);
   }
 }
-.about-layout {
-}
-.about-image {
+@keyframes rocket {
+  to {
+    transform: translateX(50px) translateY(0px);
+  }
 }
