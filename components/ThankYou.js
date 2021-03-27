@@ -30,6 +30,12 @@ const styled = {
     img {
       max-width: 50px;
     }
+
+    @media screen and (max-width: 374px) {
+      img {
+        max-width: 25px;
+      }
+    }
     position: relative;
     &:after {
       content: "";

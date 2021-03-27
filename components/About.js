@@ -48,7 +48,7 @@ const styled = {
       margin-bottom: 15px;
     }
     @media screen and (max-width: 1023px) {
-      padding: 50px 0 0 0;
+      padding: 30px 0 0 0;
     }
   `,
   layout: css`
@@ -68,10 +68,8 @@ const styled = {
     border-radius: 10px;
     position: relative;
     z-index: 2;
-    transform-style: preserve-3d;
-    perspective: 2000px;
     @media screen and (max-width: 1023px) {
-      padding: 20px 0 0 0;
+      padding: 0;
     }
   `,
   image: css`
@@ -80,13 +78,7 @@ const styled = {
     height: 100%;
     object-fit: cover;
     border-radius: inherit;
-    transform: rotateY(20deg) rotateZ(0) translate3d(0, 0px, 50px);
-    transform-style: preserve-3d;
     transition: all 0.2s linear;
-    will-change: transform;
-    &:hover {
-      transform: rotateY(-20deg) rotateZ(0) translate3d(0, 0px, 50px);
-    }
   `,
 };
 

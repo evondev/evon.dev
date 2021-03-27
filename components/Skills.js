@@ -23,6 +23,10 @@ const styled = {
     text-shadow: 5px 5px 0 black;
     @media screen and (max-width: 1023px) {
       font-size: 100px;
+      margin-bottom: 30px;
+    }
+    @media screen and (max-width: 374px) {
+      font-size: 80px;
     }
   `,
   zero: css`
@@ -42,6 +46,10 @@ const styled = {
     @media screen and (max-width: 1023px) {
       width: 150px;
       height: 150px;
+    }
+    @media screen and (max-width: 374px) {
+      width: 100px;
+      height: 100px;
     }
   `,
   astronaut: css`
@@ -67,6 +75,7 @@ const styled = {
     @media screen and (max-width: 1023px) {
       font-size: 25px;
     }
+
     span {
       color: transparent;
       background-clip: text;

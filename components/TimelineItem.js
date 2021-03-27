@@ -29,6 +29,9 @@ const styled = {
     @media screen and (max-width: 479px) {
       font-size: 12px;
     }
+    @media screen and (max-width: 374px) {
+      flex-direction: column;
+    }
     &:nth-child(odd) {
       transform: translateX(50%);
       position: relative;
@@ -87,6 +90,10 @@ const styled = {
     @media screen and (max-width: 479px) {
       font-size: 12px;
       padding: 10px;
+    }
+    @media screen and (max-width: 374px) {
+      margin-right: 0;
+      margin-bottom: 10px;
     }
     &.is-first {
       background-image: linear-gradient(

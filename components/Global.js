@@ -11,6 +11,9 @@ export const global = {
       font-size: 30px;
       margin-bottom: 35px;
     }
+    @media screen and (max-width: 479px) {
+      font-size: 25px;
+    }
   `,
   headingLetter: css`
     debug: global-headingLetter;
