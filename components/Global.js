@@ -48,6 +48,7 @@ export const global = {
     grid-gap: 30px;
     @media screen and (max-width: 1023px) {
       grid-template-columns: 100%;
+      overflow-x: hidden;
     }
   `,
   container: css`

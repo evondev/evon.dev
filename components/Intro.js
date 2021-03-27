@@ -16,6 +16,7 @@ const styled = {
     flex-direction: column;
     text-align: center;
     position: relative;
+    overflow-x: hidden;
     @media screen and (max-width: 1023px) {
       height: auto;
       padding: 50px 0;
