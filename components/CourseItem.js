@@ -90,11 +90,11 @@ const CourseItem = ({
       rel="noopener noreferrer"
       className={styles(styled.courseItem)}
     >
-      <View fcss={styled.courseImage} className="course-image">
+      <View fcss={styled.courseImage}>
         <img src={src} alt={alt} loading="lazy" />
       </View>
-      <View fcss={styled.courseContent} className="course-content">
-        <Text tagName="h2" fcss={styled.courseTitle} className="course-title">
+      <View fcss={styled.courseContent}>
+        <Text tagName="h2" fcss={styled.courseTitle}>
           {title}
         </Text>
         <View

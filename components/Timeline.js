@@ -1,10 +1,9 @@
 import React from "react";
 import { css, useStyles } from "./fela/felaCSS";
 import { global } from "./Global";
-import Rocket from "./Rocket";
 import { Text } from "./text";
-import TimelineItem from "./TimelineItem";
 import { View } from "./view";
+import TimelineItem from "./TimelineItem";
 const styled = {
   wrapper: css`
     debug: timeline-wrapper;
@@ -48,11 +47,8 @@ const styled = {
 };
 
 const TimeLine = () => {
-  const { styles } = useStyles();
-
   return (
     <View fcss={styled.wrapper}>
-      <Rocket className="reverse"></Rocket>
       <View fcss={global.container} className="container">
         <Text tagName="h2" fcss={global.heading}>
           <Text

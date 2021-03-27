@@ -19,11 +19,9 @@ const styled = {
 };
 
 const Course = () => {
-  const { styles } = useStyles();
-
   return (
     <View fcss={styled.wrapper}>
-      <View fcss={global.container} className="container">
+      <View fcss={global.container}>
         <Text tagName="h2" fcss={global.heading}>
           <Text tagName="span" fcss={global.headingLetter}>
             M

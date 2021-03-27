@@ -64,7 +64,7 @@ const Project = () => {
             desc="Best platform learning system about Digital Marketing"
             color="third"
           ></ProjectItem>
-          <ProjectItem
+          {/* <ProjectItem
             href="https://lambo.vn"
             logo="/images/logo-lambo.png"
             alt="lambo.vn"
@@ -87,7 +87,7 @@ const Project = () => {
             name="Rachelizmarvel"
             desc="My best designer I love to working with"
             color="fifth"
-          ></ProjectItem>
+          ></ProjectItem> */}
         </View>
       </View>
     </View>
