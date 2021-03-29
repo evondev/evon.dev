@@ -65,7 +65,7 @@ const Intro = () => {
 
   return (
     <View fcss={styled.wrapper}>
-      {/* <Rocket></Rocket> */}
+      <Rocket></Rocket>
       <LogoAnimation></LogoAnimation>
       <Text tagName="h2" fcss={styled.heading}>
         <Text tagName="span" fcss={styled.headingFeature}>
