@@ -9,6 +9,7 @@ import Skills from "@components/Skills";
 import Team from "@components/Team";
 import Hobbies from "@components/Hobbies";
 import ThankYou from "@components/ThankYou";
+import Vscode from "@components/Vscode";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <Course></Course>
       <TimeLine></TimeLine>
       <Project></Project>
+      <Vscode></Vscode>
       <Skills></Skills>
       <Hobbies></Hobbies>
       <ThankYou></ThankYou>

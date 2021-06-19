@@ -85,6 +85,11 @@ a {
     stroke-dashoffset: -400;
   }
 }
+@keyframes position {
+  100% {
+    background-size: 400% 400%;
+  }
+}
 .logo-animation {
   max-width: 100px;
   margin-bottom: 20px;

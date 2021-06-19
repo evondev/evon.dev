@@ -7,7 +7,7 @@ const styled = {
   wrapper: css`
     debug: ThankYou-wrapper;
     padding: 50px 0;
-    background-color: var(--black-darkest);
+    background-color: #020216;
     position: relative;
     z-index: 0;
   `,

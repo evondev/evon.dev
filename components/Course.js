@@ -31,11 +31,11 @@ const Course = () => {
         <View fcss={global.courseList}>
           <CourseItem href="https://evondev.com/khoa-hoc-html-css"></CourseItem>
           <CourseItem
-            href="#"
-            src="/images/html-css-master.jpg"
-            cta="Coming soon"
+            href="https://evondev.com/khoa-hoc-javascript-co-ban"
+            src="/images/js-course.jpg"
+            cta="Buy now today"
             isFeatured="true"
-            title="Training offline from beginner to master HTML CSS"
+            title="The complete Javascript course for beginners"
           ></CourseItem>
           <CourseItem
             href="https://evondev.com/khoa-hoc-huong-dan-cat-psd"

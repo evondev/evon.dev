@@ -69,7 +69,7 @@ const styled = {
   courseButtonFeatured: css`
     debug: course-courseButtonFeatured;
     background-color: transparent;
-    background-image: linear-gradient(to right bottom, #33caf8, #3389f8);
+    background-image: linear-gradient(to right bottom, #ff8440, #ff9d54);
   `,
 };
 
