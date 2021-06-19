@@ -168,7 +168,7 @@ const Vscode = () => {
 const VscodeItem = ({
   name = "Evondev Dracula",
   desc = `The VScode theme base on original Dracula Official Theme with
-stuning color and high contrast`,
+stunning color and high contrast`,
   link = `https://marketplace.visualstudio.com/items?itemName=evondev.dracula-high-contrast`,
   cta = "Download now",
 }) => {
